@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Neuville";
+  src: url("./fonts/Neuville.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Neuville Bold";
+  src: url("./fonts/NeuvilleBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Neuville Light";
+  src: url("./fonts/NeuvilleLight.ttf") format("truetype");
+}
+
+body {
+  font-family: "Neuville";
+}

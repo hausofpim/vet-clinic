@@ -1,0 +1,29 @@
+.navigation {
+  ul {
+  }
+
+  li {
+    color: var(--crl-primary-unactive);
+    @apply p-4 rounded-2xl mb-3 cursor-pointer transition;
+
+    &:hover {
+      background-color: var(--crl-primary-hover);
+    }
+
+    &.active {
+      background-color: var(--crl-primary-active);
+      color: var(--crl-primary);
+      display: inline-flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &.active:after {
+      content: "";
+      position: absolute;
+      left: 88px;
+      height: 48px;
+      border: 1px solid var(--crl-primary);
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.root {
+  min-width: 90px;
+  border-right: 1px solid var(--crl-border);
+  @apply flex flex-col justify-between items-center py-5;
+}
+
+.open {
+  width: 16px;
+  height: 16px;
+  color: var(--crl-primary-unactive);
+  @apply cursor-pointer;
+}
