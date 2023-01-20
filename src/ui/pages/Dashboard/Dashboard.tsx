@@ -1,9 +1,10 @@
 import React from "react";
+import cls from "./Dashboard.module.scss";
 
 const Dashboard = () => {
   return (
-    <div>
-      <h1>This is dashboard component</h1>
+    <div className={cls.root}>
+      <p>This is dashboard component</p>
     </div>
   );
 };

@@ -11,13 +11,18 @@ const Navigation = () => {
     <ul className={cls.navigation}>
       {routes.map((route, index) => {
         return (
-          <NavLink key={route.path} to={route.path}>
-            {({ isActive }) => (
-              <li className={isActive ? cls.active : undefined}>
-                {<route.icon />}
-              </li>
-            )}
-          </NavLink>
+          <li>
+            <NavLink key={route.path} to={route.path}>
+              {({ isActive }) => (
+                <>
+                  <div className={isActive ? cls.active : undefined}>
+                    {<route.icon />}
+                  </div>
+                  <p className={isActive ? cls.active : undefined}>Title</p>
+                </>
+              )}
+            </NavLink>
+          </li>
         );
       })}
     </ul>

@@ -1,7 +1,34 @@
-.root {
-  min-width: 90px;
+$sidebarWidth: 90px;
+
+aside {
+  min-width: $sidebarWidth;
   border-right: 1px solid var(--crl-border);
-  @apply flex flex-col justify-between items-center py-5;
+  @apply flex flex-col justify-between items-center py-5 transition;
+
+  &.opened {
+    @apply transition;
+  }
+
+  /* &.opened:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: $sidebarWidth;
+    width: 100px;
+    height: 100vh;
+    background-color: aqua;
+    animation: slideout 350ms;
+  }
+
+  @keyframes slideout {
+    from {
+      width: 0%;
+    }
+
+    to {
+      width: 100px;
+    }
+  } */
 }
 
 .open {
